@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/BitCoin"
+            android:icon="@drawable/ic_722073"
+            android:title="BitCoin" />
+        <item
+            android:id="@+id/LiteCoin"
+            android:icon="@drawable/ic_iconfinder_ltc_alt_1175272"
+            android:title="LiteCoin" />
+        <item
+            android:id="@+id/BitCoinCash"
+            android:icon="@drawable/ic_1516653624"
+            android:title="BitCoinCash" />
+        <item
+            android:id="@+id/NEO"
+            android:icon="@drawable/ic_icons8_neo_cryptocurrency"
+            android:title="NEO" />
+        <item
+            android:id="@+id/IOTA"
+            android:icon="@drawable/ic_icons8_iota"
+            android:title="IOTA" />
+        <item
+            android:id="@+id/Ethereum"
+            android:icon="@drawable/ic_ethereum"
+            android:title="Ethereum" />
+        <item
+            android:id="@+id/DogeCoin"
+            android:icon="@drawable/ic_dogecoin"
+            android:title="DogeCoin" />
+        <item
+            android:id="@+id/Ripple"
+            android:icon="@drawable/ic_icons8_ripple"
+            android:title="Ripple" />
+        <item
+            android:id="@+id/Cardano"
+            android:icon="@drawable/ic_cardano"
+            android:title="Cardano" />
+        <item
+            android:id="@+id/Stellar"
+            android:icon="@drawable/ic_stellar"
+            android:title="Stellar" />
+        <item
+            android:id="@+id/Monero"
+            android:icon="@drawable/ic_monero"
+            android:title="Monero" />
+    </group>
+
+</menu>
