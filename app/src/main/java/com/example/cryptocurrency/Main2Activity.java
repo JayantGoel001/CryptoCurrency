@@ -17,6 +17,7 @@ import org.jetbrains.annotations.NotNull;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -69,15 +70,10 @@ public class Main2Activity extends AppCompatActivity {
 
             @Override
             public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
-                String body=response.body().string();
+                String body= Objects.requireNonNull(response.body()).toString();
                 Gson gson=new Gson();
                 final List<Model> newItems=gson.fromJson(body,new TypeToken<List<Model>>(){}.getType());
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        adapter2.updateData(newItems);
-                    }
-                });
+                runOnUiThread(() -> adapter2.updateData(newItems));
             }
         });
         if(swipeRefreshLayout.isRefreshing())
